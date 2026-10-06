@@ -199,3 +199,18 @@ h2 {
   font-size: 18px;
   line-height: 1.7;
 }
+.about {
+  text-align: center;
+  max-width: 750px;
+  margin: auto;
+  padding: 110px 25px;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+}
+
+.about > p:last-child {
+  font-size: 19px;
+  line-height: 1.9;
+}
