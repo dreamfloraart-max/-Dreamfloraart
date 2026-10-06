@@ -1,17 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Georgia, serif;
-  background: #fff8f2;
   color: #4b355f;
+  background: #fff8f2;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 20%, #fff 0%, transparent 25%),
+    linear-gradient(135deg, #fce4ec, #eee4f8, #e0f3f1);
+  padding: 25px 7%;
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: #4b355f;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 150px auto 0;
   text-align: center;
-  padding: 60px 20px;
+}
+
+.small-title,
+.section-small {
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 42px;
-  margin-bottom: 15px;
+  font-size: clamp(55px, 10vw, 100px);
+  margin: 20px 0;
+  font-weight: normal;
 }
 
-p {
-  font-size: 20px;
+.description {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #4b355f;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(75, 53, 95, 0.15);
+}
+
+.intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 100px 25px;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.intro p:last-child {
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .menu {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
 }
