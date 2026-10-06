@@ -243,3 +243,14 @@ footer {
   font-size: 13px;
   opacity: 0.7;
 }
+.art-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.view-art {
+  margin-top: 5px;
+  padding: 12px 24px;
+  font-size: 14px;
+}
