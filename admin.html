@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamFloraArt Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+<header class="admin-header">
+  <a class="logo" href="index.html">✦ DreamFloraArt</a>
+  <a href="index.html">View Store →</a>
+</header>
+
+<main class="admin-wrap">
+  <div class="admin-heading">
+    <div><span class="eyebrow">PRIVATE STUDIO</span><h1>Admin Dashboard</h1><p>Manage your artwork catalogue from your phone.</p></div>
+  </div>
+
+  <section class="admin-grid">
+    <div class="admin-card">
+      <h2 id="formTitle">Add Artwork</h2>
+      <form id="productForm">
+        <input type="hidden" id="editId">
+        <label>Artwork image
+          <input id="imageFile" type="file" accept="image/*">
+        </label>
+        <div id="imagePreview" class="admin-image-preview">Image preview</div>
+        <label>Artwork name
+          <input id="name" required placeholder="Moonlit Lagoon">
+        </label>
+        <label>Category
+          <select id="category"><option value="original">Original Painting</option><option value="print">Art Print</option></select>
+        </label>
+        <label>Price
+          <input id="price" type="number" min="0" step="0.01" required placeholder="120">
+        </label>
+        <label>Print size
+          <select id="size"><option value="">Not applicable</option><option>A5</option><option>A4</option><option>A4 & A5</option></select>
+        </label>
+        <label>Description
+          <textarea id="description" rows="4" placeholder="Tell customers about this artwork..."></textarea>
+        </label>
+        <label class="check"><input id="featured" type="checkbox"> Show on homepage as featured</label>
+        <div class="form-buttons"><button class="rose-button" type="submit">Save Artwork</button><button class="ghost-button" type="button" onclick="resetForm()">Clear</button></div>
+      </form>
+    </div>
+
+    <div class="admin-card">
+      <div class="admin-list-head"><h2>Your Artworks</h2><span id="productCount"></span></div>
+      <div id="adminProducts"></div>
+    </div>
+  </section>
+
+  <section class="admin-card settings-card">
+    <h2>Store Settings</h2>
+    <div class="settings-grid">
+      <label>Artist email<input id="settingEmail" placeholder="you@example.com"></label>
+      <label>WhatsApp number<input id="settingWhatsapp" placeholder="International number"></label>
+      <label>Instagram<input id="settingInstagram" placeholder="https://instagram.com/..."></label>
+      <label>TikTok<input id="settingTiktok" placeholder="https://tiktok.com/@..."></label>
+      <label>YouTube<input id="settingYoutube" placeholder="https://youtube.com/..."></label>
+      <label>Pinterest<input id="settingPinterest" placeholder="https://pinterest.com/..."></label>
+    </div>
+    <button class="rose-button" onclick="saveSettings()">Save Settings</button>
+  </section>
+
+  <div class="admin-note">
+    <strong>Important:</strong> This dashboard is a working front-end prototype using this browser's local storage. For a real public store, secure login, shared product database, image storage, orders and payments must be connected to a backend before launch.
+  </div>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
