@@ -230,9 +230,11 @@ h2 {
 }
 
 .art-card h3 {
-  font-size: 22px;
-  margin: 20px 0 8px;
+  font-size: 23px;
+  margin: 22px 0 8px;
   font-weight: normal;
+  letter-spacing: 0.5px;
+}
 }
 
 .art-card p {
