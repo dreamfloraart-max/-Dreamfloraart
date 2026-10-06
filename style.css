@@ -174,8 +174,11 @@ h2 {
 }
 .gallery {
   text-align: center;
-  padding: 100px 7%;
-  background: #fffaf7;
+  padding: 110px 7%;
+  background:
+    radial-gradient(circle at 10% 20%, #fff 0%, transparent 20%),
+    linear-gradient(135deg, #fffaf7, #f7edf8, #edf7f5);
+  position: relative;
 }
 
 .gallery h2 {
