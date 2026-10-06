@@ -11,71 +11,7 @@ h1 {
   font-weight: normal;
 }
 
-.description {
-  font-size: 22px;
-  line-height: 1.6;
-}
-
-button {
-  margin-top: 30px;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 30px;
-  background: #ffffff;
-  color: #4b355f;
-  font-family: Georgia, serif;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 8px 25px rgba(75, 53, 95, 0.15);
-}
-
-.intro {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 100px 25px;
-}
-
-h2 {
-  font-size: 42px;
-  font-weight: normal;
-}
-
-.intro p:last-child {
-  font-size: 19px;
-  line-height: 1.8;
-}
-
-@media (max-width: 700px) {
-  nav {
-    flex-direction: column;
-  }
-
-  .menu {
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero-content {
-    margin-top: 100px;
-  }
-
-  h1 {
-    font-size: 55px;
-  }
-}
-.gallery {
-  text-align: center;
-  padding: 110px 7%;
-  background:
-    radial-gradient(circle at 10% 20%, #fff 0%, transparent 20%),
-    linear-gradient(135deg, #fffaf7, #f7edf8, #edf7f5);
-  position: relative;
-}
-
-.gallery h2 {
-  margin-bottom: 50px;
+.
 }
 
 .gallery-grid {
