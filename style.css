@@ -66,43 +66,7 @@ nav {
 
   background:
     radial-gradient(circle at 15% 25%, rgba(255,255,255,.8), transparent 20%),
-    radial-gradient(circle at 85% 30%, rgba(255,255,255,.65), transparent 22%),
-    linear-gradient(135deg, #f9e8f2, #eee6f8, #e4f1ef);
-}
-
-.hero::before {
-  content: "✦  ✧  ❀  ✦  ❀  ✧";
-  position: absolute;
-  top: 18%;
-  left: 8%;
-  font-size: 2rem;
-  color: rgba(166,117,155,.35);
-  letter-spacing: 22px;
-}
-
-.hero::after {
-  content: "✧  ✦  ❀";
-  position: absolute;
-  bottom: 18%;
-  right: 8%;
-  font-size: 2.2rem;
-  color: rgba(166,117,155,.35);
-  letter-spacing: 18px;
-}
-
-.hero-content {
-  max-width: 850px;
-  padding: 100px 25px 50px;
-  position: relative;
-  z-index: 2;
-}
-
-.small-title,
-.section-small {
-  font-size: 0.75rem;
-  letter-spacing: 4px;
-  color: #9a718f;
-  margin-bottom: 18px;
+    radial-
   text-transform: uppercase;
 }
 
