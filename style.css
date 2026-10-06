@@ -171,3 +171,31 @@ h2 {
     height: 350px;
   }
 }
+.prints {
+  text-align: center;
+  padding: 100px 7%;
+  background: linear-gradient(135deg, #eee4f8, #fce4ec);
+}
+
+.prints h2 {
+  margin-bottom: 40px;
+}
+
+.prints-box {
+  max-width: 650px;
+  margin: auto;
+  padding: 50px 30px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(75, 53, 95, 0.12);
+}
+
+.prints-box h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.prints-box p {
+  font-size: 18px;
+  line-height: 1.7;
+}
